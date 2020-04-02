@@ -2,6 +2,7 @@ from flask import Blueprint, jsonify, request
 import pandas as pd
 import nltk
 import pickle
+import os
 import re, string, random
 from nltk.tag import pos_tag
 from nltk.tokenize import word_tokenize
@@ -47,12 +48,13 @@ def preprocess():
                 cleaned_tokens.append(token.lower())
             return cleaned_tokens
 
-    df = pd.read_json(r"/home/michelle/Desktop/Michelle/MEC/Academics/Project/AbstractiveUserReviewConsolidation-master/WebApp/flask-api/api/AMAZON_FASHION_5.json", lines = True)
+    basePath = os.path.dirname(os.path.abspath(__file__))
+    df = pd.read_json(basePath + "/AMAZON_FASHION_5.json", lines = True)
     df.groupby('asin').mean()
     df_test = (df.loc[df['asin'] == product_id])
     print(df_test.columns)
     
-    pickle_in = open(r"/home/michelle/Desktop/Michelle/MEC/Academics/Project/AbstractiveUserReviewConsolidation-master/WebApp/flask-api/api/nb_sentiment_analysis_final.pkl","rb")
+    pickle_in = open(basePath + "/nb_sentiment_analysis_final.pkl","rb")
     classifier = pickle.load(pickle_in)
     df_test['PreprocessedText'] = df_test.reviewText.apply(lambda x: remove_noise(word_tokenize(str(x))))
     df_test['Sentiment'] = df_test.PreprocessedText.apply(lambda x: classifier.classify(dict([tok, True] for tok in x)))
