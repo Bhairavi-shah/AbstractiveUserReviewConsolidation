@@ -65,3 +65,21 @@ code {
   font-size: 30px;
   font-style: oblique;
 }
+
+.summaryText{
+  border: thin solid blue;
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  border-radius: 5px;
+  flex-direction: column;
+}
+ 
+.sumTextSpace {
+  position: relative;
+  top: -47px;
+  background: white;
+  padding: 7px;
+  width: 106px;
+  color: blue;
+}

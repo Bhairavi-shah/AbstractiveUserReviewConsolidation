@@ -6,11 +6,18 @@ const data = require('./product_details (2).json');
 let productId = "";
 
 
+
 class App extends Component {
   constructor () {
     super()
     this.handleClick = this.handleClick.bind(this)
   }
+
+  state={
+    loading: true,
+    summary: null,
+    charat: "",
+  };
 
   async handleClick () {
     const response = await fetch('/preprocess', {
@@ -18,7 +25,14 @@ class App extends Component {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 'product_id': productId }),
     })
-console.log(await response.json())
+    const data = await response.json();
+
+    this.setState({summary:data, loading: false, charat:data.Sentiment[0]});
+//console.log(await response.json())
+console.log("the summary text is", data);
+
+
+
   }
 
   render () {
@@ -39,7 +53,10 @@ console.log(await response.json())
       />
 
         <Button variant="outlined" onClick={this.handleClick}>Submit</Button>
-    
+        <div className="summaryText">
+          {this.state.loading || !this.state.summary ? (<div></div> ) : (<div>{this.state.charat}</div>)}
+
+        </div>
     </div>
 
     )
