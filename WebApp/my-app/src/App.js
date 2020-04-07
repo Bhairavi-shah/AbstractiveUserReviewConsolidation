@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import Button from '@material-ui/core/Button'
-const data = require('./product_details (2).json');
+import Button from '@material-ui/core/Button';
+import swal from '@sweetalert/with-react'
+const dataBase = require('./product_details (2).json');
 let productId = "";
-
+let image="";
 
 
 class App extends Component {
@@ -15,8 +16,13 @@ class App extends Component {
 
   state={
     loading: true,
+    asin:"",
+    name:"",
     summary: null,
-    charat: "",
+    rating: "",
+    sentiment:"",
+    picture:""
+    
   };
 
   async handleClick () {
@@ -25,11 +31,42 @@ class App extends Component {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 'product_id': productId }),
     })
-    const data = await response.json();
-
-    this.setState({summary:data, loading: false, charat:data.Sentiment[0]});
+    let data = await response.json();
+    let Name="lets see";
+    data = {summ:["lorem ipsom","lorem ipsum","lorem ipsum"],
+            rating:4,
+            sentiment:1};
+    this.setState({summary:data.summ, name: Name, loading: false, asin:productId, rating:data.rating, sentiment:data.sentiment, picture:image});
 //console.log(await response.json())
 console.log("the summary text is", data);
+for(var i=0;i<productDetails.length;i++){
+  if(productDetails[i].asin==productId){
+    this.state.name=productDetails[i].productName;
+    this.state.picture=productDetails[i].img;
+  }
+}
+console.log(this.state.name);
+console.log(this.state.picture);
+swal(
+  
+  <div id="wrapper">
+  <div id="header"><h1>{this.state.name}</h1></div>
+  <div id="left-sidebar">
+    
+    <div id="imageBody"><img id="pic" src={this.state.picture}></img></div>
+  </div>
+  <div id="content">
+    <div id="inner-content">
+      <ul>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+        <li>lorem ipsum</li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer"><h2>Rating:{this.state.rating}</h2></div>
+</div>
+)
 
 
 
@@ -47,7 +84,9 @@ console.log("the summary text is", data);
         )}
         onChange={(event,value) => {
           productId = value.asin
+          image = value.img
           console.log(productId)
+          console.log(image)
         }
       }
       />
@@ -55,6 +94,7 @@ console.log("the summary text is", data);
         <Button variant="outlined" onClick={this.handleClick}>Submit</Button>
         <div className="summaryText">
           {this.state.loading || !this.state.summary ? (<div></div> ) : (<div>{this.state.charat}</div>)}
+       
 
         </div>
     </div>
@@ -87,6 +127,6 @@ console.log("the summary text is", data);
 // }
 
 
-const productDetails = data["product_details"];
+const productDetails = dataBase["product_details"];
 
 export default App

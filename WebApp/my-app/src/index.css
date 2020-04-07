@@ -41,6 +41,48 @@ code {
   background-color: #72a3b8;
 }
 
+#header {
+  background-color: #dddddd;
+}
+
+#footer {
+  clear: both;
+  background-color: #dddddd;
+}
+
+#left-sidebar {
+  width: 200px;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+#content {
+  background-color: #eeeeee;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: -200px;
+  padding-left: 200px;
+}
+      
+#imageBody{
+  width: 200px;
+  height: 200px;
+}
+
+#pic{
+  object-fit: contain;
+  max-width: 200px;
+  max-height: 200px;
+}
+.swal{
+  height: 1000px !important;
+  width:850px !important;
+}
+.swal-overlay {
+  background-color: rgba(7, 17, 20, 0.55);
+}
 /* If you want the content centered horizontally and vertically */
 .centered {
   position: absolute;
@@ -51,10 +93,7 @@ code {
 }
 
 /* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
+
 
 #headings{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
