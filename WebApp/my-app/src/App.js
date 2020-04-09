@@ -61,22 +61,22 @@ else{
 }
 colors="blue";
 if(this.state.rating>=0 && this.state.rating<1){
-  colors="#ff0f03"
+  colors="#f54542"
 }
 if(this.state.rating>=1 && this.state.rating<2){
-  colors="##e65f17"
+  colors="#fffb00"
 }
 if(this.state.rating>=2 && this.state.rating<3){
-  colors="##f2ff00"
+  colors="#00ff0d"
 }
 if(this.state.rating>=3 && this.state.rating<4){
-  colors="#00ff66"
+  colors="#00f7ff"
 }
 if(this.state.rating>=4 && this.state.rating<5){
-  colors="#00fff7"
+  colors="#0011ff"
 }
 if(this.state.rating==5){
-  colors="#0044ff"
+  colors="#ff00e1"
 }
 
 
