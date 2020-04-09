@@ -136,13 +136,9 @@ swal(
         }
       }
       />
-
+ 
         <Button variant="outlined" onClick={this.handleClick}>Submit</Button>
-        <div className="summaryText">
-          {this.state.loading || !this.state.summary ? (<div></div> ) : (<div>{this.state.charat}</div>)}
-       
-
-        </div>
+        <div className="colorBarHolder"><img id="colorbar" src={require("./images/Untitledgradient.png")}></img></div>
     </div>
 
     )

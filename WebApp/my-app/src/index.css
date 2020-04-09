@@ -163,3 +163,16 @@ code {
   /* and repeat them horizontally */
   background-repeat: repeat-x;
 }
+
+.colorBarHolder{
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+
+}
+
+#colorbar{
+  object-fit: contain;
+  max-width: 200px;
+  max-height: 100px;
+}
