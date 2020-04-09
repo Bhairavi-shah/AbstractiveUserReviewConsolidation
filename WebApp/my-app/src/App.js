@@ -60,19 +60,19 @@ else{
 
 }
 colors="blue";
-if(this.state.rating==0){
+if(this.state.rating>=0 && this.state.rating<1){
   colors="#ff0f03"
 }
-if(this.state.rating==1){
+if(this.state.rating>=1 && this.state.rating<2){
   colors="##e65f17"
 }
-if(this.state.rating==2){
+if(this.state.rating>=2 && this.state.rating<3){
   colors="##f2ff00"
 }
-if(this.state.rating==3){
+if(this.state.rating>=3 && this.state.rating<4){
   colors="#00ff66"
 }
-if(this.state.rating==4){
+if(this.state.rating>=4 && this.state.rating<5){
   colors="#00fff7"
 }
 if(this.state.rating==5){
