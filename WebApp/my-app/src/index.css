@@ -5,11 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
 }
 
 .split {
@@ -38,11 +40,13 @@ code {
 /* Control the right side */
 .right {
   right: 0;
-  background-color: #72a3b8;
+  background-color: powderblue;
+  
 }
 
 #header {
   background-color: #dddddd;
+  padding: 7px;
 }
 
 #footer {
@@ -70,7 +74,11 @@ code {
 #imageBody{
   width: 200px;
   height: 200px;
+  padding-top: 40%;
+  
 }
+
+
 
 #pic{
   object-fit: contain;
@@ -81,6 +89,7 @@ code {
 .sentimentBody{
   width: 50px;
   height: 50px;
+  padding-top: 10px;
 }
 
 #sentimentPic{
@@ -117,24 +126,13 @@ code {
   font-style: oblique;
 }
 
-.summaryText{
-  border: thin solid blue;
-  padding: 2rem;
-  margin: 2rem;
-  display: flex;
-  border-radius: 5px;
-  flex-direction: column;
-}
- 
-.sumTextSpace {
-  position: relative;
-  top: -47px;
-  background: white;
-  padding: 7px;
-  width: 106px;
-  color: blue;
+.summBody{
+  padding-right: 10px;
 }
 
+.summBody p{
+  text-align: justify;
+}
 .rating_bar {
   /*this class creats 5 stars bar with empty stars */
   /*each star is 16 px, it means 5 stars will make 80px together */
