@@ -22,6 +22,7 @@ class App extends Component {
     asin:"",
     name:"",
     summary: null,
+    price:null,
     rating: null,
     sentiment:null,
     picture:""
@@ -36,10 +37,11 @@ class App extends Component {
     })
     let data = await response.json();
     let Name="lets see";
-    data = {summ:["lorem ipsom lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum"],
+    data = {summ:["great taste but not the best. good but not great. great tasting snack. great taste and price. great tasting and easy to make. great tasting and healthy. great taste and texture. great tasting and convenient. great product but not the same as price. great gluten free snack. "],
             rating:3.4,
+            price:"$2.3",
             sentiment:0};
-    this.setState({summary:data.summ, name: Name, loading: false, asin:productId, rating:data.rating, sentiment:data.sentiment, picture:image});
+    this.setState({summary:data.summ, name: Name, loading: false, asin:productId, price:data.price, rating:data.rating, sentiment:data.sentiment, picture:image});
 //console.log(await response.json())
 console.log("the summary text is", data);
 for(var i=0;i<productDetails.length;i++){
@@ -94,7 +96,10 @@ swal(
   }}>
     <div id="inner-content">
       <div>
-      <div className="sentimentBody"><img id="sentimentPic" src={sentimentImage}></img></div>
+        
+      <div className="sentimentBody">
+<p> <img id="sentimentPic" src={sentimentImage}></img>Price:{this.state.price}</p>
+      </div>
         <div className="summBody"><p>{this.state.summary[0]}</p></div>
         
       </div>

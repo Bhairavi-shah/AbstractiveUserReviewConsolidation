@@ -87,15 +87,25 @@ code {
 }
 
 .sentimentBody{
+  text-align: right;
+display: inline-block;
   width: 50px;
   height: 50px;
   padding-top: 10px;
 }
 
 #sentimentPic{
+  
   object-fit: contain;
   max-width: 50px;
   max-height: 50px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+#priceBox{
+  
+  display: inline-block;
 }
 .swal{
   height: 1000px !important;
@@ -128,6 +138,7 @@ code {
 
 .summBody{
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .summBody p{
