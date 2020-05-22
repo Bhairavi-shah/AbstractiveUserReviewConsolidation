@@ -6,5 +6,5 @@ Open a new terminal,
 2. npm install
 3. npm start
 
-Simultaneouly, have the flask app running at the other terminal
+Simultaneously, have the flask app running at the other terminal
 The React app opens in the browser at localhost:3000
