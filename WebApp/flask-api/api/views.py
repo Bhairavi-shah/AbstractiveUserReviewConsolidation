@@ -49,7 +49,7 @@ def preprocess():
             return cleaned_tokens
 
     basePath =os.path.dirname(os.path.abspath(__file__))
-    df = pd.read_json(basePath +"/AMAZON_FASHION_5.json", lines = True)
+    df = pd.read_json(basePath +"/result_final.json", lines = True)
     df.groupby('asin').mean()
     df_test = (df.loc[df['asin'] == product_id])
     print(df_test.columns)
