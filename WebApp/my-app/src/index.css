@@ -109,7 +109,7 @@ display: inline-block;
 }
 .swal{
   height: 1000px !important;
-  width:850px !important;
+  width:1000px !important;
 }
 .swal-overlay {
   background-color: rgba(7, 17, 20, 0.55);
@@ -142,7 +142,7 @@ display: inline-block;
 }
 
 .summBody p{
-  text-align: justify;
+  text-align: left;
 }
 .rating_bar {
   /*this class creats 5 stars bar with empty stars */

@@ -37,7 +37,7 @@ class App extends Component {
     })
     let data = await response.json();
     let Name="lets see";
-    data = {summ:["great taste but not the best. good but not great. great tasting snack. great taste and price. great tasting and easy to make. great tasting and healthy. great taste and texture. great tasting and convenient. great product but not the same as price. great gluten free snack. "],
+    data = {summ:["great taste but not the best."," good but not great.", "great tasting snack.", "great taste and price.", "great tasting and easy to make." ,"great tasting and healthy." ,"great taste and texture." ,"great tasting and convenient.", "great product but not the same as price.", "great gluten free snack. "],
             rating:3.4,
             price:"$2.3",
             sentiment:0};
@@ -100,7 +100,23 @@ swal(
       <div className="sentimentBody">
 <p> <img id="sentimentPic" src={sentimentImage}></img>Price:{this.state.price}</p>
       </div>
-        <div className="summBody"><p>{this.state.summary[0]}</p></div>
+        <div className="summBody">
+          <ul style={{textAlign: "left"}}>
+            <li>{this.state.summary[0]}</li>
+            <li>{this.state.summary[1]}</li>
+            <li>{this.state.summary[2]}</li>
+            <li>{this.state.summary[3]}</li>
+            <li>{this.state.summary[4]}</li>
+            <li>{this.state.summary[5]}</li>
+            <li>{this.state.summary[6]}</li>
+            <li>{this.state.summary[7]}</li>
+            <li>{this.state.summary[8]}</li>
+            <li>{this.state.summary[9]}</li>
+          </ul>
+          
+          
+          
+        </div>
         
       </div>
      
