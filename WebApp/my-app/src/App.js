@@ -36,14 +36,15 @@ class App extends Component {
       body: JSON.stringify({ 'product_id': productId }),
     })
     let data = await response.json();
+    console.log(data.summaries);
     let Name="lets see";
-    data = {summ:["great taste but not the best."," good but not great.", "great tasting snack.", "great taste and price.", "great tasting and easy to make." ,"great tasting and healthy." ,"great taste and texture." ,"great tasting and convenient.", "great product but not the same as price.", "great gluten free snack. "],
-            rating:3.4,
-            price:"$2.3",
-            sentiment:0};
-    this.setState({summary:data.summ, name: Name, loading: false, asin:productId, price:data.price, rating:data.rating, sentiment:data.sentiment, picture:image});
+    // data = {summ:{0:["great taste but not the best."," good but not great.", "great tasting snack.", "great taste and price.", "great tasting and easy to make." ,"great tasting and healthy." ,"great taste and texture." ,"great tasting and convenient.", "great product but not the same as price.", "great gluten free snack. "]},
+    //         rating:3.4,
+    //         "price":{"0":"$2.3"},
+    //         sentiment:0};
+    this.setState({summary:data.summaries[0], name: Name, loading: false, asin:productId, price:data.price[0], rating:data.avg_rating[0], sentiment:data.sentiment[0], picture:image});
 //console.log(await response.json())
-console.log("the summary text is", data);
+//console.log("the summary text is", data);
 for(var i=0;i<productDetails.length;i++){
   if(productDetails[i].asin==productId){
     this.state.name=productDetails[i].productName;

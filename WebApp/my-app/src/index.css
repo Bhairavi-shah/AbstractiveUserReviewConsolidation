@@ -75,6 +75,7 @@ code {
   width: 200px;
   height: 200px;
   padding-top: 40%;
+  margin-left:20px;
   
 }
 
@@ -107,6 +108,12 @@ display: inline-block;
   
   display: inline-block;
 }
+
+.swal-modal {
+  background-color: white;
+  width:600px;
+
+}
 .swal{
   height: 1000px !important;
   width:1000px !important;
@@ -128,7 +135,7 @@ display: inline-block;
 
 #headings{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 #select{
