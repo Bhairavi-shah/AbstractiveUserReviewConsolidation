@@ -43,13 +43,10 @@ for i in linkDict:  #Creating Links
 basePath =os.path.dirname(os.path.abspath(__file__))
 pickle_in = open(basePath + "/nb_sentiment_analysis_final.pkl","rb")
 classifier = pickle.load(pickle_in)
-print("Loaded sentimentclassifier")
 data = pd.read_csv(basePath + "/testing_seq2seq.csv")
-print("Loaded testing.csv") 
 meta_data = pd.read_json(basePath + "/product_details_meta.json")
-print("Loaded metadata")
 summary_data = pd.read_json(basePath + "/result_final.json")
-print("Loaded final summary json")
+
 contraction_mapping = {"ain't": "is not", "aren't": "are not","can't": "cannot", "'cause": "because", "could've": "could have", "couldn't": "could not",
                            "didn't": "did not",  "doesn't": "does not", "don't": "do not", "hadn't": "had not", "hasn't": "has not", "haven't": "have not",
                            "he'd": "he would","he'll": "he will", "he's": "he is", "how'd": "how did", "how'd'y": "how do you", "how'll": "how will", "how's": "how is",
@@ -165,8 +162,7 @@ def generatesummary():
         res_df = pd.DataFrame(columns=['pid', 'title', 'summaries', 'avg_rating', 'sentiment', 'price', 'image'])
 
         my_df = clean_data()
-        print("Data cleaning done")
-        print(meta_data)
+
         j = 0
 
         row = [pid, ]
@@ -174,7 +170,6 @@ def generatesummary():
         df = my_df.loc[my_df['ProductId'] == pid]
         sums = []
         sents = []
-        print("Generate sentiment")
         for i in range(len(df)):
             if pred_sentiment(df.iloc[i].text) == 'Positive':
                 sents += [1, ]
@@ -183,10 +178,8 @@ def generatesummary():
         sums = [summary_data.loc[summary_data['pid'] == pid]['summaries'].values[0],]
         row += sums
         row += [df['Score'].sum()/len(df),]
-        if sents.count(1) > sents.count(0):
-            row += [1,]
-        else:
-            row += [0,]
+        row += [[sents.count(1)/len(df)*100, sents.count(0)/len(df)*100],]
+
         row += [meta_data.loc[meta_data['asin'] == pid]['price'].values[0],]
         row += [meta_data.loc[meta_data['asin'] == pid]['image'].values[0],]
         res_df = res_df.append({'pid':row[0], 'title':row[1], 'summaries':row[2], 'avg_rating':row[3], 'sentiment':row[4], 'price':row[5], 'image':row[6]},ignore_index=True)
@@ -194,5 +187,4 @@ def generatesummary():
         return res_df
 
     final_result = get_result(product_id).to_json()
-    print(final_result)
     return final_result
