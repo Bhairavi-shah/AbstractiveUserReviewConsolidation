@@ -187,4 +187,5 @@ def generatesummary():
         return res_df
 
     final_result = get_result(product_id).to_json()
+    print(final_result)
     return final_result

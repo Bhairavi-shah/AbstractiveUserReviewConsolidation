@@ -45,8 +45,8 @@ class App extends Component {
     //         sentiment:0};
     this.setState({summary:data.summaries[0], name: Name, loading: false, asin:productId, price:data.price[0], rating:data.avg_rating[0], sentiment:data.sentiment[0], picture:image});
 //console.log(await response.json())
-this.state.sentimentposi=20.4567890346.toFixed(1);
-this.state.sentimentnega=79.56788999.toFixed(1);
+this.state.sentimentposi=data.sentiment[0][0].toFixed(1);
+this.state.sentimentnega=data.sentiment[0][1].toFixed(1);
 //console.log("the summary text is", data);
 for(var i=0;i<productDetails.length;i++){
   if(productDetails[i].asin==productId){
