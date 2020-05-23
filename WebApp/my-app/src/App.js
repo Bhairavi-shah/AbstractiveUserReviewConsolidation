@@ -24,7 +24,8 @@ class App extends Component {
     summary: null,
     price:null,
     rating: null,
-    sentiment:null,
+    sentimentposi:null,
+    sentimentnega:null,
     picture:""
     
   };
@@ -44,6 +45,8 @@ class App extends Component {
     //         sentiment:0};
     this.setState({summary:data.summaries[0], name: Name, loading: false, asin:productId, price:data.price[0], rating:data.avg_rating[0], sentiment:data.sentiment[0], picture:image});
 //console.log(await response.json())
+this.state.sentimentposi=20.4567890346.toFixed(1);
+this.state.sentimentnega=79.56788999.toFixed(1);
 //console.log("the summary text is", data);
 for(var i=0;i<productDetails.length;i++){
   if(productDetails[i].asin==productId){
@@ -55,11 +58,11 @@ console.log(this.state.name);
 console.log(this.state.picture);
 ratingPercent=(this.state.rating/5)*100+'%';
 console.log(ratingPercent);
-if(this.state.sentiment==0){
-  sentimentImage=require("./images/down.png")}
-else{
-  sentimentImage=require("./images/up.png")
-}
+// if(this.state.sentiment==0){
+//   sentimentImage=require("./images/down.png")}
+// else{
+//   sentimentImage=require("./images/up.png")
+// }
 colors="blue";
 if(this.state.rating>=0 && this.state.rating<1){
   colors="#f54542"
@@ -99,20 +102,21 @@ swal(
       <div>
         
       <div className="sentimentBody">
-<p> <img id="sentimentPic" src={sentimentImage}></img>Price:{this.state.price}</p>
+
+        <p id="sentimentPicPos"><img class="sentimentPic"  src={require("./images/up.png")}></img>{this.state.sentimentposi}%&#8195;</p>
+        
+        <p id="sentimentPicNeg"><img class="sentimentPic" src={require("./images/down.png")}></img>{this.state.sentimentnega}%</p>
       </div>
         <div className="summBody">
           <ul style={{textAlign: "left"}}>
+          
+        <p>Price:{this.state.price}</p>
             <li>{this.state.summary[0]}</li>
             <li>{this.state.summary[1]}</li>
             <li>{this.state.summary[2]}</li>
             <li>{this.state.summary[3]}</li>
             <li>{this.state.summary[4]}</li>
-            <li>{this.state.summary[5]}</li>
-            <li>{this.state.summary[6]}</li>
-            <li>{this.state.summary[7]}</li>
-            <li>{this.state.summary[8]}</li>
-            <li>{this.state.summary[9]}</li>
+            
           </ul>
           
           
