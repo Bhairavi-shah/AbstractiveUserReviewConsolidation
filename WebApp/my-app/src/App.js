@@ -30,7 +30,7 @@ class App extends Component {
   };
 
   async handleClick () {
-    const response = await fetch('/preprocess', {
+    const response = await fetch('/generatesummary', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 'product_id': productId }),
