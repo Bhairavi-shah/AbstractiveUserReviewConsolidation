@@ -4,19 +4,8 @@
 Abstract
 ---------
 
+E-commerce websites such as Amazon allow customers to leave reviews for various products. There are usually hundreds of reviews for a single product, each review could be lengthy and repetitive. A customer would find it difficult to make a well-informed decision after reading all the reviews. Therefore, automatic review summarization has a huge potential to help customers by providing an authentic summary of the reviews found online on the E-commerce sites. We propose the method of abstractive summarization, which provides more accurate summaries and are closer to human generated summaries. The system also provides the general sentiment of the summaries generated which will help the customers make a decision quickly. The sentiment of the summaries would help the customers know the tone of the text.
 
-    E-commerce websites such as Amazon allow customers to leave reviews for
-    various products. There are usually hundreds of reviews for a single
-    product, each review could be lengthy and repetitive. A customer would
-    find it difficult to make a well-informed decision after reading all the
-    reviews. Therefore, automatic review summarization has a huge potential
-    to help customers by providing an authentic summary of the reviews found
-    online on the E-commerce sites. We propose the method of abstractive
-    summarization, which provides more accurate summaries and are closer to
-    human generated summaries. The system also provides the general
-    sentiment of the summaries generated which will help the customers make
-    a decision quickly. The sentiment of the summaries would help the
-    customers know the tone of the text.
 ---
 
 Acknowledgements
@@ -1132,7 +1121,7 @@ Level 1 DFD
 Level 2 DFD
 -----------
 
-![DFD Level 2](images/DFDLevel2.png)
+![DFD Level 2](images/DFDlevel2.png)
 
 Implementation
 ==============
