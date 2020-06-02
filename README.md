@@ -1,3 +1,5 @@
+# Abstractive User Review Consolidation
+
 ---
 abstract: |
     E-commerce websites such as Amazon allow customers to leave reviews for
@@ -13,79 +15,6 @@ abstract: |
     a decision quickly. The sentiment of the summaries would help the
     customers know the tone of the text.
 ---
-
-**Abstractive User Review Consolidation**\
-**CS492 Project\
-**
-
-**CSU16120 MDL16CS043** **Bhairavi Sameer Shah**\
-**CSU16123 MDL16CS046** **Diya Liza Varghese**\
-**CSU16138 MDL16CS074** **Michelle Elizabeth**\
-**CSU16159 MDL16CS117** **Theres Mary Jose**
-
-**B. Tech Computer Science & Engineering**
-
-**Department of Computer Engineering\
-Model Engineering College\
-Thrikkakara, Kochi 682021\
-Phone: +91.484.2575370\
-http://www.mec.ac.in\
-hodcs\@mec.ac.in\
-**
-
-**Model Engineering College Thrikkakara**\
-**Department of Computer Engineering**\
-
-**C E R T I F I C A T E**\
-
-This is to certify that, this report titled ***Abstractive User Review
-Consolidation*** is a bonafide record of the work done by\
-
-**CSU16120 MDL16CS043** **Bhairavi Sameer Shah**
-
-\
-
-**CSU16123 MDL16CS046** **Diya Liza Varghese**
-
-\
-
-**CSU16138 MDL16CS074** **Michelle Elizabeth**
-
-\
-
-**CSU16159 MDL16CS117** **Theres Mary Jose**
-
-\
-
-[Eighth Semester B. Tech. Computer Science & Engineering]{.sans-serif}
-
-\
-students, for the course work in **CS492 Project**, which is the second
-part of the two semester project work, under our guidance and
-supervision, in partial fulfillment of the requirements for the award of
-the degree, B. Tech. Computer Science & Engineering of **A. P. J. Abdul
-Kalam Technological University**.
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx̄xxxxxxxxxxxxxxxxx̄
-
-Guide\
-\
-\
-Aysha Fymin Majeed\
-Assistant Professor\
-Computer Engineering
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx̄xxxxxxxxxxxxxxxxx̄
-
-Coordinator Head of the Department\
-\
-\
-Manilal D L Manilal D L\
-Associate Professor Associate Professor\
-Computer Engineering Computer Engineering
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx̄xxxxxxxxxxxxxxxxx̄\
-\
 
 **Acknowledgements**\
 
@@ -413,115 +342,7 @@ Literature Survey
     There are 3 levels of sentiment analysis: document-level, sentence
     level, aspect and entity level. The system uses review analytical
     algorithm and automatic review classification algorithm.\
-
-ls.csv slno;title;author;year;technique;advantages;disadvantages 1;A
-Multi-view Abstractive Summarization Model Jointly Considering Semantics
-and Sentiment;Moye Chen, Lei Li, Wei Liu;2018;Encoder-Decoder Recurrent
-Neural Network;Multi-view model extracts sentiment features
-automatically. Low dimension vector for SE proved to be a powerful
-representation since sentiment categories are not complex.This model was
-proven to be an improvement to existing baseline systems;Sentiment
-labeling should be done manually since there is no dataset with labeled
-sentiment. More attention should be given to intra-relationship of
-words. Sentiment factor was not considered while computing loss
-function. 2;Generating Abstractive Summaries Using Sequence to Sequence
-Attention Model;Tooba Siddiqui, Jawwad Ahmed Shamsi;2018;Sequence to
-Sequence Attention Model;The rouge score of the temporal attention model
-is higher as compared to the rouge score of the global attention
-model.;Computational cost for summarisation increases with documents,
-layers and iterations. 3;Abstractive Multi-document
-Summarization;Ranjitha N S, Dr. Jagadish S Kallimani;2017;Linear
-Optimization Method, Semantic Information Text Approach;Repetition
-avoided using agglomerative hierarchical clustering. This approach is
-applicable with respect to any domain and requires no interventions of
-human experts. Provides PAS representation with high salience value.;It
-fails for words with opinions. 4;Extracting Aspects and Mining Opinions
-in Product Reviews Using Supervised Learning Algorithm;A.Jeyapriya, C.S.
-Kanimozhi Selvi;2015;Sentiment Analysis/Aspect Based Opinion
-Mining;Positive and negative opinions are separated from the documents.
-Sentiment orientation algorithm is used to find the probability of
-positive and negative opinions. Good accuracy.;New sentences are not
-created. 5;An Abstractive Summarizer Based on Improved Pointer-Generator
-Network;Wenbo Nie, Wei Zhang, Xinle Li, Yao Yu;2019;Pointer-Generator
-Model, Attention Mechanism;It has a higher Rouge score than the basic
-pointer-generator model. It can handle out-of-vocabulary(OOV)
-words.;Repetition is not fully eliminated. 6;Dual Encoding for
-Abstractive Text Summarization;Kaichun Yao, Libo Zhang, Dawei Du,
-Tiejian Luo, Lili Tao, Yanjun Wu;2018;Dual Encoding Model;Uses an
-enhanced repetition avoid mechanism which improves the quality of the
-generated summary. The secondary encoding is more likely to fulfil a
-fine and selective encoding to help decoder produce better summary. More
-suitable for long sequence generation tasks.;A large decoding length
-makes the secondary encoder out of function. A small decoding length is
-not able to capture enough information and increases computational cost
-due to more secondary encoding operation. 7;Multi-document Abstractive
-Summarization Based on Predicate Argument Structure;Alshaina S, Ansamma
-John, Aneesh G Nath;2017;Predicate Argument Structure;Better computation
-time than existing systems. Abstractive text summarization produces
-highly meaningful, knowledge rich and less redundant summary. Provide a
-viable solution than other algorithms.;Feature selection is made
-randomly. 8;Evaluation of Automatic Text Summarization Based on Human
-Summaries;Farshad Kiyoumarsi;2014;Fuzzy Method, Vector Approach;Quality
-of summaries produced by humans and by using automatic summarization was
-comparable. Automatic more efficient when volume of data increases. Most
-of the time, readers are able to understand the summaries using their
-common sense and make the summaries coherent in their
-mind.;Automatically generated summaries are not coherent and intelligent
-as human summaries, since humans can think and decide on the best
-option. 9;Clustered Genetic Semantic Graph Approach for Multi-document
-Abstractive Summarization;Atif Khan, Naomie Salim, Haleem
-Farman;2016;Clustered Genetic Semantic Graph Approach;The semantic
-similarity measures assists in detecting redundancy by capturing
-semantically equivalent predicate argument structures thereby improving
-results. Does not require any intervention of human experts.;The
-proposed approach assumes semantic structure of sentence. The impact of
-Cross-Document Structural Theory (CST) relations for multi-document
-abstractive summarization is not considered. 10;Integrating Extractive
-and Abstractive Models for Long Text Summarization;Shuai Wang, Xiang
-Zhao, Bo Li, Bin Ge, Daquan Tang;2017;Graph Model, Recurrent Neural
-Network;Integration of the state-of-art models leverages the advantages
-of both extractive and abstractive summarization methods, and achieves
-significant performance improvements when dealing with long text. A real
-world dataset from financial domain for long text summarization is
-used.;Requires a large-scale structured training data. Not capable of
-multi-document text summarization. 11;Multi Document Abstractive
-Summarization using ILP Based Multi Sentence Compression;Siddhartha
-Banerjee, Prasenjit Mitra, Kazunari Sugiyama;2015;Inter Linear
-Programming Model(ILP);Achieves promising results on informativeness and
-readability. Log probability score is assigned as an indicator of
-linguistic quality. ILP is a novel methodology to be used.;Requires
-manual evaluation 12;A Neural Attention Model for Abstractive Sentence
-Summarization;Alexander M. Rush, Sumit Chopra, Jason Weston;2015;Neural
-Network;Can easily scale to train on a large amount of data. Can be
-trained directly on any document-summary pair.;Repeating semantic
-elements. Altering semantic roles. Improper generalization.
-13;Multi-Document Abstractive Summarization using Chunk-Graph and
-Recurrent Neural Network;Jianwei Niu, Huan Chen, Qingjuan Zhao, Limin
-Sun, Mohammed Atiquzzaman;2017;Chunk Graph and Recurrent Neural
-Network;Using CG instead of words as basic unit greatly reduces the
-graph size. Smaller graph size can reduce the computation load
-effectively.;CG filters the sentence paths in low linguistic quality.
-14;Sequence Generative Adversarial Network for Long Text
-Summarization;Hao Xu, Yanan Cao, Ruipeng Jia, Yanbing Liu, Jianlong
-Tan;2018;Generative Adversarial Network(GAN);Discriminator model
-provides additional improvement in performance. It is more prominent in
-effective summarization of long source text.;The generated summary still
-contains repeating phrases. This model uses supervised learning, which
-rely on high quality datasets which is scarce. 15;Multiple Text Document
-Summarization System using Hybrid Summarization Technique;Harsha Dave,
-Shree Jaswal;2015;Hybrid Technique, WordNet Ontology;The generated
-abstractive summary is in well-compressed, grammatically correct and
-human readable format.;As the size of the document increases, system
-will take more time to generate summary. 16;Multi-Layered Sentimental
-Analytical Model For Product Review Mining;Jagbir Kaur, Meenakshi
-Bansal;2016;Sentiment Analysis/Opinion Mining;The proposed system has
-very high accuracy(99 percent). It is efficient and accurate in terms of
-assessed parameters.;Does not consider compression error.
-
-  **Sl. No**   **Title**   **Author**   **Year**   **Technique**   **Advantages**   **Disadvantages**
-  ------------ ----------- ------------ ---------- --------------- ---------------- -------------------
-                                                                                    
-                                                                                    
+     
 
 Proposed System
 ---------------
@@ -646,8 +467,8 @@ natural language techniques to generate a new shorter text that conveys
 the most critical information from the original one along with the
 sentiment quotient of the generated summary.
 
-![System
-Overview[]{label="fig:system overview"}](images/SystemOverview.png){#fig:system overview}
+![SystemOverview](images/SystemOverview.png)
+###### fig:system overview
 
 ### Product Functions
 
@@ -868,8 +689,8 @@ system.
 
 ### Input Product Name
 
-![Usecase Diagram - Input Product
-Name[]{label="fig:usecase1"}](images/input_usecase.png){#fig:usecase1}
+![Usecase Diagram - Input ProductName](images/input_usecase.png)
+###### fig:usecase1
 
 -   The user inputs the product name via the auto-complete drop-down
     list provided in the web application.
@@ -880,8 +701,8 @@ Name[]{label="fig:usecase1"}](images/input_usecase.png){#fig:usecase1}
 
 ### Search for Reviews
 
-![Usecase Diagram - Search
-Reviews[]{label="fig:usecase2"}](images/search_usecase.png){#fig:usecase2}
+![Usecase Diagram - Search Reviews](images/search_usecase.png)
+###### fig:usecase2
 
 -   The product ID is given as input to this stage.
 
@@ -892,8 +713,8 @@ Reviews[]{label="fig:usecase2"}](images/search_usecase.png){#fig:usecase2}
 
 ### Preprocessing
 
-![Usecase Diagram -
-Preprocessing[]{label="fig:usecase3"}](images/preprocessing_usecase.png){#fig:usecase3}
+![Usecase Diagram - Preprocessing](images/preprocessing_usecase.png)
+###### fig:usecase3
 
 -   The collected review data is given as input to this stage.
 
@@ -904,8 +725,8 @@ Preprocessing[]{label="fig:usecase3"}](images/preprocessing_usecase.png){#fig:us
 
 ### Sentiment Analysis
 
-![Usecase Diagram - Sentiment
-Analysis[]{label="fig:usecase4"}](images/sentiment_usecase.png){#fig:usecase4}
+![Usecase Diagram - Sentiment Analysis](images/sentiment_usecase.png)
+###### fig:usecase4
 
 -   The preprocessed data is fed into the trained Naive Bayes machine
     learning model for sentiment analysis.
@@ -915,8 +736,8 @@ Analysis[]{label="fig:usecase4"}](images/sentiment_usecase.png){#fig:usecase4}
 
 ### Summary Generation
 
-![Usecase Diagram - Summary
-Generation[]{label="fig:usecase5"}](images/summary_usecase.png){#fig:usecase5}
+![Usecase Diagram - Summary Generation](images/summary_usecase.png)
+###### fig:usecase5
 
 -   Preprocessed data is fed into the trained machine learning model for
     generating summary.
@@ -926,8 +747,8 @@ Generation[]{label="fig:usecase5"}](images/summary_usecase.png){#fig:usecase5}
 
 ### Display Output
 
-![Usecase Diagram - Display
-Output[]{label="fig:usecase6"}](images/output_usecase.png){#fig:usecase6}
+![Usecase Diagram - Display Output](images/output_usecase.png)
+###### fig:usecase6
 
 -   The summary and the sentiment found from the trained model along
     with the basic information of the product is sent back to the web
@@ -1011,8 +832,8 @@ The system is divided into 6 phases:\
 
 -   **Phase 6** - Output display\
 
-![System
-Architecture[]{label="fig:sysarch"}](images/system_architecture.png){#fig:sysarch}
+![System Architecture](images/system_architecture.png)
+###### fig:system architechture
 
 ### Training the models
 
@@ -1076,49 +897,50 @@ Data Description
 
 ### Database design
 
-![Database Design[]{label="fig:fig"}](DatabaseDesign.png){#fig:fig}
+![Database Design](DatabaseDesign.png)
+###### fig:Database Design
 
 ### Use Case Diagram
 
 #### Input Data
 
-![Usecase Diagram - Input
-Data[]{label="fig:usecase1"}](images/input_usecase.png){#fig:usecase1}
+![Usecase Diagram - Input Data](images/input_usecase.png)
+###### fig:usecase1
 
 #### Search Reviews
 
-![Usecase Diagram - Search
-Reviews[]{label="fig:usecase2"}](images/search_usecase.png){#fig:usecase2}
+![Usecase Diagram - Search Reviews](images/search_usecase.png)
+###### fig:usecase2
 
 #### Preprocessing
 
-![Usecase Diagram -
-Preprocessing[]{label="fig:usecase3"}](images/preprocessing_usecase.png){#fig:usecase3}
+![Usecase Diagram - Preprocessing](images/preprocessing_usecase.png)
+###### fig:usecase3
 
 #### Sentiment Analysis
 
-![Usecase Diagram - Sentiment
-Analysis[]{label="fig:usecase4"}](images/sentiment_usecase.png){#fig:usecase4}
+![Usecase Diagram - Sentiment Analysis](images/sentiment_usecase.png)
+###### fig:usecase4
 
 #### Summary Generation
 
-![Usecase Diagram - Summary
-Generation[]{label="fig:usecase5"}](images/summary_usecase.png){#fig:usecase5}
+![Usecase Diagram - Summary Generation](images/summary_usecase.png)
+###### fig:usecase5
 
 #### Output Display
 
-![Usecase Diagram - Output
-Display[]{label="fig:usecase6"}](images/output_usecase.png){#fig:usecase6}
+![Usecase Diagram - Output Display](images/output_usecase.png)
+###### fig:usecase6
 
 ### Class diagram
 
-![Class
-Diagram[]{label="fig:classdiagram"}](ClassDiagram.png){#fig:classdiagram}
+![Class Diagram](ClassDiagram.png)
+###### fig:classdiagram
 
 ### Activity Diagram
 
-![Activity
-Diagram[]{label="fig:activitydiagram"}](images/ActDiagram.png){#fig:activitydiagram}
+![Activity Diagram](images/ActDiagram.png)
+###### fig:activitydiagram
 
 ### Dataset Design
 
@@ -1315,17 +1137,17 @@ Data Flow Diagram
 Level 0 DFD
 -----------
 
-![DFD Level 0[]{label="fig:dfd0"}](DFDlevel0.png){#fig:dfd0}
+![DFD Level 0](DFDlevel0.png)
 
 Level 1 DFD
 -----------
 
-![DFD Level 1[]{label="fig:dfd1"}](DFDlevel1.png){#fig:dfd1}
+![DFD Level 1](DFDlevel1.png)
 
 Level 2 DFD
 -----------
 
-![DFD Level 2[]{label="fig:dfd2"}](images/DFDLevel2.png){#fig:dfd2}
+![DFD Level 2](images/DFDLevel2.png)
 
 Implementation
 ==============
@@ -1467,16 +1289,14 @@ User selects the required product from the drop-down list.By mapping the
 product name to its corresponding product id, all reviews for the
 selected product are extracted.
 
-![Drop-down
-Selection[]{label="fig:dropdown"}](images/dropdown.png){#fig:dropdown}
+![Drop-down Selection](images/dropdown.png)
 
 ### Preprocessing Module
 
 The review data undergoes tokenization, removal of stop words, POS
 tagging and lemmatization.
 
-![Preprocessed
-Text[]{label="fig:preprocess"}](images/Preprocessed Text.png){#fig:preprocess}
+![Preprocessed Text](images/Preprocessed Text.png)
 
 ### Model Training
 
@@ -1486,14 +1306,11 @@ contains the product reviews and their summaries are fed into the model
 to train the model to produce summaries. The model is then tested with a
 testing dataset of reviews.
 
-![Seq2Seq Model with Attention Mechanism
-Architecture[]{label="fig:train"}](images/model_training1.png){#fig:train}
+![Seq2Seq Model with Attention Mechanism Architecture](images/model_training1.png)
 
-![Model
-training[]{label="fig:train"}](images/model_training0.png){#fig:train}
+![Model training](images/model_training0.png)
 
-![Summaries Predicted by Trained
-Model[]{label="fig:train"}](images/predicted summary.png){#fig:train}
+![Summaries Predicted by Trained Model](images/predicted summary.png)
 
 ### Summary Generation
 
@@ -1502,8 +1319,7 @@ an abstractive summary, which is then given to the web application. The
 web application displays the generated summary along with the sentiment
 and review rating for the user to view.
 
-![Final Summary, Sentiment and Average
-Rating[]{label="fig:summaryfinal"}](images/SummaryGeneration.png){#fig:summaryfinal}
+![Final Summary, Sentiment and Average Rating](images/SummaryGeneration.png)
 
 Integration Testing
 -------------------
@@ -1514,8 +1330,7 @@ integrated together to perform specific tasks and activities. The
 purpose of integration testing is to detect any inconsistencies between
 the units that are integrated together.
 
-![Generated
-Summary[]{label="fig:integration"}](images/IntegrationTesting.png){#fig:integration}
+![Generated Summary](images/IntegrationTesting.png)
 
 System Testing
 --------------
@@ -1524,8 +1339,7 @@ The system testing part of a testing methodology involves testing the
 complete system for errors and bugs. All modules were integrated at the
 end of integration testing and the entire system is tested here.
 
-![Abstractive Summarization
-System[]{label="fig:finaloutput"}](images/FinalOutput.png){#fig:finaloutput}
+![Abstractive Summarization System](images/FinalOutput.png)
 
 Graphical User Interface
 ========================
@@ -1542,14 +1356,12 @@ was selected.
 Main GUI Components
 -------------------
 
-![GUI
-Interface[]{label="fig:homepage"}](images/homepage.png){#fig:homepage}
+![GUI Interface](images/homepage.png)
 
 The user interface gives you the options to select the product from the
 auto complete drop-down list.\
 
-![Drop-down
-Selection[]{label="fig:dropdown"}](images/dropdown.png){#fig:dropdown}
+![Drop-down Selection](images/dropdown.png)
 
 After selecting the product, the summary is generated along with the
 rating, sentiment and the image of the product in a sweet alert.
@@ -1557,10 +1369,9 @@ rating, sentiment and the image of the product in a sweet alert.
 Results
 =======
 
-![Input Selection[]{label="fig:input"}](images/dropdown.png){#fig:input}
+![Input Selection](images/dropdown.png)
 
-![Generated Abstractive
-Summary[]{label="fig:output"}](images/FinalOutput.png){#fig:output}
+![Generated Abstractive Summary](images/FinalOutput.png)
 
 Conclusion
 ==========
