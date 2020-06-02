@@ -1,7 +1,8 @@
 # Abstractive User Review Consolidation
 
 ---
-abstract: |
+abstract:
+
     E-commerce websites such as Amazon allow customers to leave reviews for
     various products. There are usually hundreds of reviews for a single
     product, each review could be lengthy and repetitive. A customer would
@@ -16,7 +17,7 @@ abstract: |
     customers know the tone of the text.
 ---
 
-**Acknowledgements**\
+**Acknowledgements**  
 
 This project would not have been possible without the kind support and
 help of many individuals. We would like to extend our sincere gratitude
@@ -43,10 +44,10 @@ during the course of this work.
 Last but not the least, we thank the Almighty God for guiding us through
 and enabling us to complete the work within the specified time.
 
-`Bhairavi Sameer Shah`\
-`Diya Liza Varghese`\
-`Michelle Elizabeth`\
-`Theres Mary Jose`
+`Bhairavi Sameer Shah`  
+`Diya Liza Varghese`  
+`Michelle Elizabeth`  
+`Theres Mary Jose`  
 
 Introduction
 ============
@@ -80,8 +81,7 @@ System Study Report
 Literature Survey
 -----------------
 
-1.  A Multi-View Abstractive Summarization Model Jointly Considering
-    Semantics and Sentiment
+1.  **A Multi-View Abstractive Summarization Model Jointly Considering Semantics and Sentiment**
 
     Short text summarization generates a short summary consisting of
     only a few sentences which captures the main idea of the original
@@ -99,10 +99,9 @@ Literature Survey
     decoder predicts the next word based on the context vector and the
     previously predicted words and uses Attention Mechanism for better
     performance. Bi-LSTM model was used as sentiment classifier and
-    ROUGE was used as the evaluation metric.\
+    ROUGE was used as the evaluation metric.
 
-2.  Generating Abstractive Summaries Using Sequence to Sequence
-    Attention Model
+2.  **Generating Abstractive Summaries Using Sequence to Sequence Attention Model**
 
     Automatic text summarization using abstractive methods is
     significant in the field of information retrieval. Abstractive
@@ -116,9 +115,9 @@ Literature Survey
     decoder and restrains the decoder to attend the same chunks of the
     documents in the subsequent time stamps. ROUGE has been used as the
     evaluation metric for comparing sequence to sequence model with
-    global attention and temporal attention.\
+    global attention and temporal attention.
 
-3.  Abstractive Multi-Document Summarization
+3.  **Abstractive Multi-Document Summarization**
 
     According to this paper, summarization can be done by 3 methods:
     compressive summarization, extractive summarization and abstractive
@@ -136,10 +135,9 @@ Literature Survey
     analysed to create the summary. BSU is extracted, a semantic link
     network is created, reduced and thus, the sentence is generated. The
     clustered semantic graphs use semantic role labelling and ranking
-    algorithms.\
+    algorithms.
 
-4.  Extracting Aspects and Mining Opinions in Product Reviews Using
-    Supervised Learning Algorithm
+4.  **Extracting Aspects and Mining Opinions in Product Reviews Using Supervised Learning Algorithm**
 
     Semantic analysis and opinion mining aim to automatically extract
     opinions expressed in the user-generated content. Opinion mining
@@ -152,10 +150,9 @@ Literature Survey
     aspect in online reviews. The system preprocesses data and performs
     sentence and aspect extraction. Stop word removal, stemming and POS
     tagging are the processes in data preprocessing. Naive Bayesian
-    algorithm is used to identify opinions.\
+    algorithm is used to identify opinions.
 
-5.  An Abstractive Summarizer Based on Improved Pointer-Generator
-    Network
+5.  **An Abstractive Summarizer Based on Improved Pointer-Generator Network**
 
     The deep learning model has been widely applied in natural language
     processing and has achieved improved results. This paper introduces
@@ -173,9 +170,9 @@ Literature Survey
     process of constantly observing the original text and the generated
     summary when people do information extraction, and improve the copy
     probability based on the baseline pointer-generator network model.
-    ROUGE metric was used to evaluate the performance of the system.\
+    ROUGE metric was used to evaluate the performance of the system.
 
-6.  Dual Encoding for Abstractive Text Summarization
+6.  **Dual Encoding for Abstractive Text Summarization**
 
     Recurrent neural network-based sequence-to-sequence attention models
     have proven effective in abstractive text summarization. In this
@@ -198,10 +195,9 @@ Literature Survey
     the decoder models the decoded content at each stage as a semantic
     feature vector helping avoid the problem of repetition. The model
     was evaluated using ROUGE-1, ROUGE-2 and ROUGE-L for unigram, bigram
-    and long text respectively.\
+    and long text respectively.
 
-7.  Multi-Document Abstractive Summarization Based on Predicate Argument
-    Structure
+7.  **Multi-Document Abstractive Summarization Based on Predicate Argument Structure**
 
     The summary is generated based on the predicate argument structure
     of the sentences. To obtain the predicate argument structure we use
@@ -213,9 +209,9 @@ Literature Survey
     because of its quality) by utilizing semantic similarity measures.
     Features are extracted from this, and finally the top ranked
     predicate argument structures are selected for summary. The
-    sentences are formed using language generation techniques.\
+    sentences are formed using language generation techniques.
 
-8.  Evaluation of Automatic Text Summarizations Based on Human Summaries
+8.  **Evaluation of Automatic Text Summarizations Based on Human Summaries**
 
     Two sets of summaries of the same data were obtained, one by
     automatic text summarization and the other by manually producing
@@ -224,10 +220,9 @@ Literature Survey
     human summaries were much more accurate than automatically generated
     summaries. Though, summaries produced by fuzzy method were much more
     acceptable and understandable compared to the ones produced by
-    vector approach.\
+    vector approach.
 
-9.  Clustered Genetic Semantic Graph Approach for Multi-Document
-    Abstractive Summarization
+9.  **Clustered Genetic Semantic Graph Approach for Multi-Document Abstractive Summarization**
 
     This paper uses a clustered genetic semantic graph approach for
     multi-document abstractive summarization. The semantic graph is
@@ -242,10 +237,9 @@ Literature Survey
     clustering algorithm is performed to eliminate redundancy in such a
     way that representative PAS with the highest salience score from
     each cluster is chosen, and fed to language generation to generate
-    summary sentences.\
+    summary sentences.
 
-10. Integrating Extractive and Abstractive Models for Long Text
-    Summarization
+10. **Integrating Extractive and Abstractive Models for Long Text Summarization**
 
     In this paper, a two-phase approach towards long text summarization
     is employed, namely, EA-LTS. In the extraction phase, it conceives a
@@ -256,8 +250,7 @@ Literature Survey
     attention mechanisms to generate summaries. A real-life long text
     corpora, collected from sina.com is used for testing.\
 
-11. Multi Document Abstractive Summarization Using ILP Based Multi
-    Sentence Compression
+11. **Multi Document Abstractive Summarization Using ILP Based Multi Sentence Compression**
 
     This approach finds the most important documents from multiple
     documents. It is done using LexRank. Sentences are aligned to
@@ -270,9 +263,9 @@ Literature Survey
     cluster, the summary sentences are generated. Constraints were
     imposed on the number of sentences selected from each cluster to
     avoid redundancies. The ROUGE evaluation is done to ensure the
-    quality. It also undergoes manual evaluation.\
+    quality. It also undergoes manual evaluation.
 
-12. A Neural Attention Model for Abstractive Sentence Summarization
+12. **A Neural Attention Model for Abstractive Sentence Summarization**
 
     In this work, a fully data-driven approach to abstractive sentence
     summarization is used. This method uses a local attention-based
@@ -283,10 +276,9 @@ Literature Survey
     model. The attention model is combined with a generative algorithm
     to produce accurate abstractive summaries. Since this system makes
     no assumptions about the vocabulary of generated summary, it can be
-    directly trained on any document-summary pair.\
+    directly trained on any document-summary pair.
 
-13. Multi-Document Abstractive Summarization Using Chunk-Graph &
-    Recurrent Neural Network
+13. **Multi-Document Abstractive Summarization Using Chunk-Graph & Recurrent Neural Network**
 
     In this method, several sentences in the document set are grouped
     into clusters manually or by clustering algorithms. Sentences in the
@@ -297,9 +289,9 @@ Literature Survey
     entities are merged to one node. Beam search & RNNLM is applied to
     find the best path in CG as the summary of a cluster. In the end,
     all the summaries generated from the CGs are ranked and these scores
-    decide the order of each sentence in the final summary.\
+    decide the order of each sentence in the final summary.
 
-14. Sequence Generative Adversarial Network for Long Text Summarization
+14. **Sequence Generative Adversarial Network for Long Text Summarization**
 
     A new adversarial training framework is used for text summarization
     task. This framework consists of two models: A generator that
@@ -310,10 +302,9 @@ Literature Survey
     samples and the generator gets feedback from the discriminator and
     improves itself. For effective summarization of long text, the
     attention mechanism is introduced in the generator, on both encoder
-    and decoder and a triple-RNN model is used in the discriminator.\
+    and decoder and a triple-RNN model is used in the discriminator.
 
-15. Multiple Text Document Summarization System Using Hybrid
-    Summarization Technique
+15. **Multiple Text Document Summarization System Using Hybrid Summarization Technique**
 
     This paper presents a novel approach to generate abstractive summary
     from extractive summary using WordNet ontology. There are 2 main
@@ -328,9 +319,9 @@ Literature Survey
     set of synset. Next, meaningful terms are produced by preprocessing
     and classifier classifies those terms. WordNet is a lexical database
     of English. It defines meanings and models. It consists of synsets,
-    which provides different semantic relationships.\
+    which provides different semantic relationships.
 
-16. Multi-Layered Sentimental Analytical Model for Product Review Mining
+16. **Multi-Layered Sentimental Analytical Model for Product Review Mining**
 
     The product review classification is the mechanism used to analyze
     the sentiment or opinion in the reviews posted by the users to
@@ -341,7 +332,7 @@ Literature Survey
     Stemming porter is used to convert non-root words into root words.
     There are 3 levels of sentiment analysis: document-level, sentence
     level, aspect and entity level. The system uses review analytical
-    algorithm and automatic review classification algorithm.\
+    algorithm and automatic review classification algorithm.
      
 
 Proposed System
@@ -352,8 +343,8 @@ the user reviews which are necessary to produce genuine reviews of
 products. Also, some methods consider only a single document for
 summarization while others do not consider repetition of semantically
 equivalent words. To overcome these issues, we introduce the system
-Abstractive User Review Consolidation.\
-\
+Abstractive User Review Consolidation.
+
 We propose a Sequence to Sequence (Seq2Seq) model with Attention
 Mechanism which consists of an encoder, decoder, and attention layer to
 perform abstractive summarization of user reviews. The dataset includes
@@ -412,7 +403,8 @@ meaning. With the rise in usage of e-commerce platforms, it is important
 to provide a concise form of user reviews about the products available
 online. The web application would also be useful for sellers of the
 products, making it easier for them to go through customer feedback by
-going through their products on the application.\
+going through their products on the application.
+
 The project aims to create a web application, which can be used to
 obtain consolidated form of customer reviews of various products
 available on e-commerce websites. This will help buyers to go through
@@ -422,7 +414,7 @@ application would also provide the general sentiment of other buyers,
 obtained from the sentiment analysis of the reviews. This would provide
 the buyer with the percentage of people satisfied and dissatisfied with
 the product, which would further help in the decision to purchase the
-product.\
+product.
 
 ### Overview of Developer's Responsibilities
 
@@ -488,14 +480,14 @@ The product aims to implement the following functions:
 
 #### End Users
 
--   **Online Shoppers**\
+-   **Online Shoppers**  
     The application is intended to be used by online shoppers who
     directly buy goods over the internet. They simply need to have
     access to the internet and a basic knowledge on using web pages.
     Increased exposure to technology increases the probability of
     shopping online and thus using this application.
 
--   **Manufacturers**\
+-   **Manufacturers**  
     This application can also be used by product manufacturers in order
     to receive the customers opinions and feedback on their product in
     brief. They may use this data to improve their strategies and to
@@ -596,90 +588,105 @@ proposed system.
 
 ### Hardware Requirements
 
--   System: **CPU - 2.4GHz**\
+-   System: **CPU - 2.4GHz**  
     Model training and generating abstractive summary consumes a lot of
     system resources. Therefore a server with Clock speed of at least
-    2.4GHz is required.\
+    2.4GHz is required.
 
--   RAM: **10GB** (Minimum)\
+-   RAM: **10GB** (Minimum)  
     The system deals with a large amount of memory requirements in order
-    to train the model. Hence a RAM of at least 10GB is required.\
+    to train the model. Hence a RAM of at least 10GB is required.
 
--   Hard Disk: **50GB** (or higher)\
+-   Hard Disk: **50GB** (or higher)  
     The system deals with a large amount of data. Hence it requires a
     hard disk of 50GB.
 
 ### Software Requirements
 
 -   Operating System: Any operating system (preferably Linux (64-bit),
-    Windows)\
+    Windows)  
     Linux, Windows is preferred because these are developer friendly,
-    has a powerful shell, flexible and is the most popular\
+    has a powerful shell, flexible and is the most popular.
 
--   Language: **Python 3.6.2, JavaScript**\
-    **Python**\
+-   Language: **Python 3.6.2, JavaScript**  
+
+    **Python**  
+
     Python is an interpreted, high-level, general-purpose programming
     language. It takes very less time to develop. It is typically 3-5
     times shorter than other equivalent programming languages. It has
     powerful polymorphic list and dictionary types, for which rich
-    syntactic support is built straight into the language.\
-    **JavaScript**\
+    syntactic support is built straight into the language.
+
+    **JavaScript**  
+    
     JavaScript, often abbreviated as JS, is a high-level programming
     language, often just-in-time compiled, and multi-paradigm. It has
     curly-bracket syntax, dynamic typing, prototype-based
     object-orientation, and first-class functions. JavaScript is the
     programming language of HTML and the Web.
 
--   Frameworks: **Flask**\
+-   Frameworks: **Flask**
+    
     Flask is a python framework used for building the Web interface.
     Flask is much more fully featured than other frameworks. Python
     Flask framework supports the use of human-readable website URLs. It
     also has its own bootstrapping tool. Flask separates a project into
     individual applications, where Pyramid and Django expect a project
-    to be a single "application" with several views or models.\
+    to be a single "application" with several views or models.
 
--   IDE: **Google Colaboratory, Visual Studio Code**\
+-   IDE: **Google Colaboratory, Visual Studio Code**
+
     **Google Colaboratory** : Google Colaboratory is a free cloud
     service by Google and supports free GPU. It provides us with a cloud
     environment consisting of n1-highmem-2 instance machine type, 2
     virtual CPU at 2.2GHz, 13GB RAM and 64GB Free Space. It has an idle
     cut-off 90 minutes and can be used to run code for free maximum for
-    12 hours.\
+    12 hours.
+    
     **Visual Studio Code** : Visual Studio Code is a source-code editor
     developed by Microsoft for Windows, Linux and macOS. It includes
     support for debugging, embedded Git control, syntax highlighting,
-    intelligent code completion, snippets, and code refactoring.\
+    intelligent code completion, snippets, and code refactoring.
 
--   Libraries: **Tensorflow, Keras, NLTK, React**\
-    **Keras**\
+-   Libraries: **Tensorflow, Keras, NLTK, React**
+
+    **Keras**
+    
     Keras is an open-source neural-network library written in Python. It
     is capable of running on top of TensorFlow, Microsoft Cognitive
     Toolkit, R, Theano, or PlaidML. Designed to enable fast
     experimentation with deep neural networks, it focuses on being
     user-friendly, modular, and extensible. Keras has strong multi-GPU &
-    distributed training support.\
-    **TensorFlow**\
+    distributed training support.
+    
+    **TensorFlow**
+    
     TensorFlow is a free and open-source artificial intelligence
     software library for dataflow and differentiable programming across
     a range of tasks. It is a symbolic math library, used for machine
     learning applications such as to create large-scale neural networks
     with many layers. It uses data flow graphs to build models.
     TensorFlow is helpful for Classification, Perception, Understanding,
-    Discovering, Prediction and Creation.\
-    **NLTK**\
+    Discovering, Prediction and Creation.
+
+    **NLTK**
+    
     NLTK provides a suite of text processing libraries for
     classification, tokenization, stemming, tagging, parsing, and
     semantic reasoning like nltk.sent-tokenization,
     nltk.word-tokenization, nltk.stopwords etc. When compared to other
     libraries like spacy, gensim and scikit-learn, NLTK has many
     advantages such as fast tokenization, plenty of approaches for each
-    nlp task, and support for a large number of languages.\
-    **React**\
+    nlp task, and support for a large number of languages.
+    
+    **React**
+    
     React is an open-source Javascript library that is used to build
     user interfaces. It helps build encapsulated components that manage
     their own state, then compose them to make complex UIs. React
     abstracts away the DOM from you, offering a simpler programming
-    model and better performance.\
+    model and better performance.
 
 Functional Requirements
 -----------------------
@@ -688,9 +695,6 @@ This section briefly describes the functional requirements of the
 system.
 
 ### Input Product Name
-
-![Usecase Diagram - Input ProductName](images/input_usecase.png)
-###### fig:usecase1
 
 -   The user inputs the product name via the auto-complete drop-down
     list provided in the web application.
@@ -701,9 +705,6 @@ system.
 
 ### Search for Reviews
 
-![Usecase Diagram - Search Reviews](images/search_usecase.png)
-###### fig:usecase2
-
 -   The product ID is given as input to this stage.
 
 -   The Amazon product database is searched using this product ID to
@@ -712,9 +713,6 @@ system.
 -   The review data from the database is then given for preprocessing.
 
 ### Preprocessing
-
-![Usecase Diagram - Preprocessing](images/preprocessing_usecase.png)
-###### fig:usecase3
 
 -   The collected review data is given as input to this stage.
 
@@ -725,19 +723,13 @@ system.
 
 ### Sentiment Analysis
 
-![Usecase Diagram - Sentiment Analysis](images/sentiment_usecase.png)
-###### fig:usecase4
-
 -   The preprocessed data is fed into the trained Naive Bayes machine
     learning model for sentiment analysis.
 
 -   The sentiment of the preprocessed data is generated, which is given
-    to the web application.\
+    to the web application.
 
 ### Summary Generation
-
-![Usecase Diagram - Summary Generation](images/summary_usecase.png)
-###### fig:usecase5
 
 -   Preprocessed data is fed into the trained machine learning model for
     generating summary.
@@ -746,9 +738,6 @@ system.
     application.
 
 ### Display Output
-
-![Usecase Diagram - Display Output](images/output_usecase.png)
-###### fig:usecase6
 
 -   The summary and the sentiment found from the trained model along
     with the basic information of the product is sent back to the web
@@ -817,20 +806,19 @@ System Design
 System Architecture
 -------------------
 
-\
-The system is divided into 6 phases:\
+The system is divided into 6 phases:
 
--   **Phase 1** - Training the machine learning models\
+-   **Phase 1** - Training the machine learning models
 
--   **Phase 2** - Input data\
+-   **Phase 2** - Input data
 
--   **Phase 3** - Data collection\
+-   **Phase 3** - Data collection
 
--   **Phase 4** - Data preprocessing\
+-   **Phase 4** - Data preprocessing
 
--   **Phase 5** - Summary generation and sentiment analysis\
+-   **Phase 5** - Summary generation and sentiment analysis
 
--   **Phase 6** - Output display\
+-   **Phase 6** - Output display
 
 ![System Architecture](images/system_architecture.png)
 ###### fig:system architechture
@@ -845,11 +833,12 @@ mechanism that includes an encoder, a decoder and an attention layer.
 The data set is used to train the model to produce summary of each
 review. This trained model is tested with a testing dataset of reviews
 to check its performance. The model is then stored for use to summarize
-the required reviews.\
+the required reviews.
+
 The Twitter sentiment analysis dataset, which contains tweets and their
 associated sentiment is used to train a Naive Bayes model to correctly
 identify the sentiment of any given sentence. The model is tested with
-sample sentences to check its accuracy.\
+sample sentences to check its accuracy.
 
 ### Input Data
 
@@ -880,7 +869,8 @@ generation. A summary is generated by the model, which is then given to
 the web application. The summary generated is an abstractive summary,
 which generates new phrases and sentences that represent the most
 important information from the source text. The most relevant summaries
-are selected to be sent to the web application.\
+are selected to be sent to the web application.
+
 Preprocessed data is also sent to the sentiment analysis model. The
 percentage of positive and negative sentiment acquired from all the
 preprocessed reviews is generated and sent to the web application.
@@ -897,7 +887,7 @@ Data Description
 
 ### Database design
 
-![Database Design](DatabaseDesign.png)
+![Database Design](images/DatabaseDesign.png)
 ###### fig:Database Design
 
 ### Use Case Diagram
@@ -945,13 +935,14 @@ Data Description
 ### Dataset Design
 
 For training the summary generation machine learning model, we to use
-the Amazon product data\[1\], an open source dataset composed of
+the Amazon product data[1], an open source dataset composed of
 millions of amazon reviews. This dataset contains product reviews and
 metadata from Amazon, including 142.8 million reviews spanning the
 period from May 1996 - July 2014. It includes reviews (ratings, text,
 helpfulness votes), product metadata (descriptions, category
 information, price, brand, and image features), and links to other
-relevant data (also viewed/also bought graphs).\
+relevant data (also viewed/also bought graphs).
+
 Twitter is a well-known microblog service that allows public data to be
 collected via APIs. For training the text sentiment prediction model we
 make use of the NLTK's twitter corpus currently containing a sample of
@@ -1042,7 +1033,7 @@ React is an open-source Javascript library that is used to build user
 interfaces. It helps build encapsulated components that manage their own
 state, then compose them to make complex UIs. React abstracts away the
 DOM from you, offering a simpler programming model and better
-performance.\
+performance.
 
 ### sweetalert
 
@@ -1155,94 +1146,54 @@ Implementation
 Algorithms
 ----------
 
-### Algorithm For Inputting Product Name
+### Algorithm For Input of Product Name
 
-Start\
-Accept product name from the drop-down list\
-Stop\
+![Algorithm for input of product name](images/algo1.png)
 
 ### Algorithm for Data Collection
 
-Start\
-Initialise pid with product id of the chosen product\
-Initialise df as product details dataset\
-Initialise result as an empty dataframe\
-Return result\
-Stop\
+![Algorithm for data collection](images/algo2.png)
 
 ### Algorithm for Preprocessing
 
-Start\
-Separate the words in the data into tokens\
-Remove the stop words from the input data\
-Resolve abbreviations in the data\
-Perform lemmatization on the data\
-Stop\
+![Algorithm for preprocessing](images/algo3.png)
 
 ### Algorithm for Training of Seq2Seq Model with Attention Mechanism
 
-Start\
-Read dataset into a dataframe\
-Preprocess the reviews and summaries from the dataframe\
-Remove rows containing null values from dataframe\
-Remove rows containing reviews or summaries less than the set value\
-Split the training and testing data\
-**Training phase:**\
-**Inference phase:**\
-Stop\
+![Algorithm for training seq2seq model](images/algo4.png)
 
 ### Algorithm for Naive Bayes Sentiment Analysis Model
 
-Start\
-Read dataset into a dataframe\
-Preprocess the reviews and summaries from the dataframe\
-Remove rows containing null values from dataframe\
-Create an instance of Naive Bayes classifier\
-Train the model with cleaned data\
-Save the model\
-Stop\
+![Algorithm for training naive bayes model](images/algo5.png)
 
 ### Algorithm for Summary Generation
 
-Start\
-Initialise df as preprocessed product review data\
-Initialise result as empty string array\
-Initialize the decoder with internal states of the encoder\
-Initialise reqlen as length of summary required\
-Let word-frequencies be a dictionary containing frequency of each word
-in result\
-Score each summary using word-frequencies\
-Select required number of sentences in final summary based on maximum
-sentence scores\
-Return result\
-Stop\
+![Algorithm for summary generation](images/algo6.png)
 
 ### Algorithm for Sentiment Analysis
 
-Start\
-Initialise df as preprocessed product review data\
-Initialise sent-pos with 0 as value\
-Initialise sent-neg with 0 as value\
-Return$$( \hspace{0.2cm} \frac{sent-pos \times 100}{n}\ \hspace{0.5cm} and \hspace{0.5cm} \frac{sent-neg \times 100}{n} \hspace{0.2cm} )$$\
-Stop\
+![Algorithm for sentiment analysis](images/algo7.png)
 
 Development Tools
 -----------------
 
--   **Google Colaboratory**\
+-   **Google Colaboratory**
+
     Google Colaboratory is a free cloud service by Google and supports
     free GPU. It provides us with a cloud environment consisting of
     n1-highmem-2 instance machine type, 2 virtual CPU at 2.2GHz, 13GB
     RAM and 64GB Free Space. It has an idle cut-off 90 minutes and can
     be used to run code for free maximum for 12 hours.
 
--   **Visual Studio Code**\
+-   **Visual Studio Code**
+
     Visual Studio Code is a source-code editor developed by Microsoft
     for Windows, Linux and macOS. It includes support for debugging,
     embedded Git control, syntax highlighting, intelligent code
     completion, snippets, and code refactoring.
 
--   **Git**\
+-   **Git**
+
     Git is a free and open source distributed version control system
     designed to handle everything from small to very large projects with
     speed and efficiency. Compared to other version control systems, Git
@@ -1250,7 +1201,8 @@ Development Tools
     Branching allows you to create independent local branches in your
     code.
 
--   **Postman**\
+-   **Postman**
+
     Postman is a collaboration platform for API development. Postman's
     features simplify each step of building an API and streamline
     collaboration so you can create better APIs faster. It makes it
@@ -1310,7 +1262,7 @@ testing dataset of reviews.
 
 ![Model training](images/model_training0.png)
 
-![Summaries Predicted by Trained Model](images/predicted summary.png)
+![Summaries Predicted by Trained Model](images/predicted_summary.png)
 
 ### Summary Generation
 
@@ -1383,7 +1335,8 @@ features such as overall rating and sentiment analysis. The system uses
 a dataset of fine food reviews from Amazon to generate the summaries. It
 also generates the general sentiment of the customers towards each
 product. The average rating based on the numerous reviews available for
-each product is also calculated.\
+each product is also calculated.
+
 The sentiment analysis has been performed by training a model based on
 supervised learning. The Naive Bayes classifier has been chosen as the
 machine learning model, trained on twitter sentiment analysis data,
@@ -1395,149 +1348,153 @@ the reviews.
 Future Scope
 ============
 
-The model is trained using reviews for Fine Foods. It can be extended to
-include other categories of items available online, thereby generating
-better summaries due to a larger dataset. It can also be improved to
-integrate reviews from various online shopping websites to provide an
-unbiased summary and rating.\
-The generalization capability of a deep learning model enhances with an
-increase in the training dataset size. Web scraping can be introduced to
-perform summarization on real-time data.\
-Implementing Bi-Directional LSTM which is capable of capturing the
-context from both the directions could result in a better context
-vector. The beam search strategy can be applied for decoding the test
-sequence instead of using the greedy approach (argmax).
-Pointer-generator networks and coverage mechanisms can be implemented in
-the model to further improve the summary generation capability of the
-model.
+-   The model is trained using reviews for Fine Foods. It can be extended to
+    include other categories of items available online, thereby generating
+    better summaries due to a larger dataset. It can also be improved to
+    integrate reviews from various online shopping websites to provide an
+    unbiased summary and rating.
 
-999
+-   The generalization capability of a deep learning model enhances with an
+    increase in the training dataset size. Web scraping can be introduced to
+    perform summarization on real-time data.
 
-https://www.kaggle.com/snap/amazon-fine-food-reviews/home
+-   Implementing Bi-Directional LSTM which is capable of capturing the
+    context from both the directions could result in a better context
+    vector. The beam search strategy can be applied for decoding the test
+    sequence instead of using the greedy approach (argmax).
 
-Chetana Badgujar, Vimla Jethani and Tushar Ghorpade "Abstractive
+-   Pointer-generator networks and coverage mechanisms can be implemented in
+    the model to further improve the summary generation capability of the
+    model.
+
+References
+============
+
+1. https://www.kaggle.com/snap/amazon-fine-food-reviews/home
+
+2. Chetana Badgujar, Vimla Jethani and Tushar Ghorpade "Abstractive
 Summarization using Graph Based Methods" Proceedings of the 2nd
 International Conference on Inventive Communication and Computational
 Technologies (ICICCT 2018)
 
-Moye Chen, Lei Li, Wei Liu "A Multi-View Abstractive Summarization Model
+3. Moye Chen, Lei Li, Wei Liu "A Multi-View Abstractive Summarization Model
 Jointly Considering Semantics and Sentiment", Proceedings of CCIS2018
 
-Tooba Siddiqui, Jawwad Ahmed Shamsi "Generating Abstractive Summaries
+4. Tooba Siddiqui, Jawwad Ahmed Shamsi "Generating Abstractive Summaries
 Using Sequence to Sequence Attention Model", 2018 International
 Conference on Frontiers of Information Technology (FIT)
 
-Ranjitha N S, Dr. Jagadish S Kallimani "Abstractive Multi-Document
+5. Ranjitha N S, Dr. Jagadish S Kallimani "Abstractive Multi-Document
 Summarization"
 
-A.Jeyapriya, C.S.Kanimozhi Selvi "Extracting Aspects and Mining Opinions
+6. A.Jeyapriya, C.S.Kanimozhi Selvi "Extracting Aspects and Mining Opinions
 inProduct Reviews using Supervised Learning Algorithm", IEEE Sponsored
 2nd International Conference On Electronics And Communication
 Systems(ICECS 2015)
 
-Wenbo Nie, Wei Zhang, Xinle Li, Yao Yu "An Abstractive Summarizer Based
+7. Wenbo Nie, Wei Zhang, Xinle Li, Yao Yu "An Abstractive Summarizer Based
 on Improved Pointer-Generator Network"
 
-Kaichun Yao, Libo Zhang , Dawei Du , Tiejian Luo, Lili Tao, and Yanjun
+8. Kaichun Yao, Libo Zhang , Dawei Du , Tiejian Luo, Lili Tao, and Yanjun
 Wu "Dual Encoding for Abstractive Text Summarization", IEEE Transactions
 on Cybernetics
 
-Alshaina S, Ansamma John, Aneesh G Nath "Multi-document Abstractive
+9. Alshaina S, Ansamma John, Aneesh G Nath "Multi-document Abstractive
 Summarization Based on Predicate Argument Structure"
 
-Farshad Kiyoumarsi "Evaluation Of Automatic Text Summarizations Based On
+10. Farshad Kiyoumarsi "Evaluation Of Automatic Text Summarizations Based On
 Human Summaries", 2nd Global Conference on Linguistics and Foreign
 Language Teaching LINELT-2014
 
-Atif Khan, Naomie Salim, Haleem Farman "Clustered Genetic Semantic Graph
+11. Atif Khan, Naomie Salim, Haleem Farman "Clustered Genetic Semantic Graph
 Approach for Multi-document Abstractive Summarization"
 
-Shuai Wang, Xiang Zhao, Bo Li, Bin Ge, Daquan Tang "Integrating
+12. Shuai Wang, Xiang Zhao, Bo Li, Bin Ge, Daquan Tang "Integrating
 Extractive and Abstractive Models for Long Text Summarization", 2017
 IEEE 6th International Congress on Big Data
 
-Siddhartha Banerjee, Prasenjit Mitra, Kazunari Sugiyama "Multi Document
+13. Siddhartha Banerjee, Prasenjit Mitra, Kazunari Sugiyama "Multi Document
 Abstractive summarization using ILP Based Multi Sentence Compression"
 
-Alexander M. Rush, Sumit Chopra, Jason Weston "A Neural Attention Model
+14. Alexander M. Rush, Sumit Chopra, Jason Weston "A Neural Attention Model
 for Abstractive Sentence Summarization", Proceedings of the 24th
 International Joint Conference on Artificial Intelligence (IJCAI-2015)
 
-Jianwei Niu, Huan Chen, Qingjuan Zhao, Limin Sun†, Mohammed Atiquzzaman
+15. Jianwei Niu, Huan Chen, Qingjuan Zhao, Limin Sun†, Mohammed Atiquzzaman
 "Multi-Document Abstractive Summarization using Chunk-graph and
 Recurrent Neural Network", IEEE ICC 2017 SAC Symposium Big Data
 Networking Track
 
-Hao Xu, Yanan Cao, Ruipeng Jia, Yanbing Liu, Jianlong Tan "Sequence
+16. Hao Xu, Yanan Cao, Ruipeng Jia, Yanbing Liu, Jianlong Tan "Sequence
 Generative Adversarial Network for Long Text Summarization", 2018 IEEE
 30th International Conference on Tools with Artificial Intelligence
 
-Harsha Dave, Shree Jaswal "Multiple Text Document Summarization System
+17. Harsha Dave, Shree Jaswal "Multiple Text Document Summarization System
 usingnHybrid Summarization Technique", 2015 1st International Conference
 on Next Generation Computing Technologies
 
-Jagbir Kaur, Meenakshi Bansal "Multi-Layered Sentiment Analytical Model
+18. Jagbir Kaur, Meenakshi Bansal "Multi-Layered Sentiment Analytical Model
 for Product Review Mining", 2016 Fourth International Conference on
 Parallel, Distributed and Grid Computing
 
-Allahyari, Mehdi, et al. "Text Summarization Techniques: A Brief
+19. Allahyari, Mehdi, et al. "Text Summarization Techniques: A Brief
 Survey." arXiv preprint arXiv:1707.02268 2017.
 
-Yao, Jin-ge, Xiaojun Wan, and Jianguo Xiao. "Recent advances in document
+20. Yao, Jin-ge, Xiaojun Wan, and Jianguo Xiao. "Recent advances in document
 summarization" Knowledge and Information Systems: 140 2017.
 
-Sunitha C, Dr. A Jaya and Amal Ganesh "Abstractive Summarization
+21. Sunitha C, Dr. A Jaya and Amal Ganesh "Abstractive Summarization
 Techniques in Indian Languages" Peer-review under responsibility of the
 Organizing Committee of ICRTCSE 2016 doi: 10.1016/j.procs.2016.05.121,
 International Conference of recent trends in computer science., 2016
 
-Khan, Atif, and Naomie Salim. "A review on abstractive summarization
+22. Khan, Atif, and Naomie Salim. "A review on abstractive summarization
 methods."Journal of Theoretical and Applied Information Technology 59.1:
 64-72, 2014
 
-Dalal, Vipul, and Latesh G. Malik. "A survey of extractive and
+23. Dalal, Vipul, and Latesh G. Malik. "A survey of extractive and
 abstractive text summarization techniques." 2013 6th International
 Conference on Emerging Trends in Engineering and Technology (ICETET), .
 IEEE, 2013.
 
-Vilca, Gregory Csar Valderrama, and Marco Antonio Sobrevilla Cabezudo.
+24. Vilca, Gregory Csar Valderrama, and Marco Antonio Sobrevilla Cabezudo.
 "A Study of Abstractive Summarization Using Semantic Representations and
 Discourse Level Information." International Conference on Text, Speech,
 and Dialogue. Springer, Cham 2017.
 
-Moratanch, N., and S. Chitrakala. "A survey on abstractive text
+25. Moratanch, N., and S. Chitrakala. "A survey on abstractive text
 summarization" Circuit, International Conference on Power and Computing
 Technologies(ICCPCT), IEEE 2016.
 
-Shimpikar, Sheetal, and Sharvari Govilkar "A Survey of Text
+26. Shimpikar, Sheetal, and Sharvari Govilkar "A Survey of Text
 Summarization Techniques for Indian Regional Languages" International
 Journal of Computer Applications 165.112017
 
-Ganesan, Kavita, ChengXiang Zhai, and Jiawei Han. "Opinosis: a graph
+27. Ganesan, Kavita, ChengXiang Zhai, and Jiawei Han. "Opinosis: a graph
 based approach to abstractive summarization of highly redundant
 opinions" Proceedings of the 23rd international conference on
 computational linguistics. Association for Computational Linguistics
 2010
 
-Lloret, Elena and Manuel Palomar. "Analyzing the use of word graphs for
+28. Lloret, Elena and Manuel Palomar. "Analyzing the use of word graphs for
 abstractive text summarization" Proceedings of the First International
 Conference on Advances in Information Mining and Management, Barcelona,
 Spain 2011.
 
-Kumar, Niraj, Kannan Srinathan and Vasudeva Varma. "A knowledge induced
+29. Kumar, Niraj, Kannan Srinathan and Vasudeva Varma. "A knowledge induced
 graph-theoretical model for extract and abstract single document
 summarization" International Conference on Intelligent Text Processing
 and Computational Linguistics. Springer, Berlin, Heidelberg 2013.
 
-Subramaniam, Manjula and Vipul Dalal."Test Model for Rich Semantic Graph
+30. Subramaniam, Manjula and Vipul Dalal."Test Model for Rich Semantic Graph
 Representation for Hindi Text using Abstractive Method" 2015.
 
-Liu, Fei, et al. "Toward abstractive summarization using semantic
+31. Liu, Fei, et al. "Toward abstractive summarization using semantic
 representa-tions."1077,2015
 
-Bhargava, Rupal, Yashvardhan Sharma, and Gargi Sharma. "ATSSI:
+32. Bhargava, Rupal, Yashvardhan Sharma, and Gargi Sharma. "ATSSI:
 Abstractive Text Summarization Using Sentiment Infusion." Procedia
 Computer Science 89,404-411 2016
 
-Eduard Hovy, Mitchell Marcus, Martha Palmer, Lance Ramshaw, and
+33. Eduard Hovy, Mitchell Marcus, Martha Palmer, Lance Ramshaw, and
 Ralpheischedel. OntoNotes: The 90 solution. In Proceedings of NAACL,2006
