@@ -1,7 +1,9 @@
 # Abstractive User Review Consolidation
 
 ---
-abstract:
+Abstract
+---------
+
 
     E-commerce websites such as Amazon allow customers to leave reviews for
     various products. There are usually hundreds of reviews for a single
@@ -17,7 +19,8 @@ abstract:
     customers know the tone of the text.
 ---
 
-**Acknowledgements**  
+Acknowledgements
+----------------
 
 This project would not have been possible without the kind support and
 help of many individuals. We would like to extend our sincere gratitude
@@ -248,7 +251,7 @@ Literature Survey
     key sentences. In the abstraction phase, it constructs a recurrent
     neural network based encoder-decoder, and devises pointer and
     attention mechanisms to generate summaries. A real-life long text
-    corpora, collected from sina.com is used for testing.\
+    corpora, collected from sina.com is used for testing.
 
 11. **Multi Document Abstractive Summarization Using ILP Based Multi Sentence Compression**
 
@@ -888,49 +891,40 @@ Data Description
 ### Database design
 
 ![Database Design](images/DatabaseDesign.png)
-###### fig:Database Design
 
 ### Use Case Diagram
 
 #### Input Data
 
 ![Usecase Diagram - Input Data](images/input_usecase.png)
-###### fig:usecase1
 
 #### Search Reviews
 
 ![Usecase Diagram - Search Reviews](images/search_usecase.png)
-###### fig:usecase2
 
 #### Preprocessing
 
 ![Usecase Diagram - Preprocessing](images/preprocessing_usecase.png)
-###### fig:usecase3
 
 #### Sentiment Analysis
 
 ![Usecase Diagram - Sentiment Analysis](images/sentiment_usecase.png)
-###### fig:usecase4
 
 #### Summary Generation
 
 ![Usecase Diagram - Summary Generation](images/summary_usecase.png)
-###### fig:usecase5
 
 #### Output Display
 
 ![Usecase Diagram - Output Display](images/output_usecase.png)
-###### fig:usecase6
 
 ### Class diagram
 
-![Class Diagram](ClassDiagram.png)
-###### fig:classdiagram
+![Class Diagram](images/ClassDiagram.png)
 
 ### Activity Diagram
 
 ![Activity Diagram](images/ActDiagram.png)
-###### fig:activitydiagram
 
 ### Dataset Design
 
@@ -1128,12 +1122,12 @@ Data Flow Diagram
 Level 0 DFD
 -----------
 
-![DFD Level 0](DFDlevel0.png)
+![DFD Level 0](images/DFDlevel0.png)
 
 Level 1 DFD
 -----------
 
-![DFD Level 1](DFDlevel1.png)
+![DFD Level 1](images/DFDlevel1.png)
 
 Level 2 DFD
 -----------
@@ -1311,7 +1305,7 @@ Main GUI Components
 ![GUI Interface](images/homepage.png)
 
 The user interface gives you the options to select the product from the
-auto complete drop-down list.\
+auto complete drop-down list.
 
 ![Drop-down Selection](images/dropdown.png)
 
